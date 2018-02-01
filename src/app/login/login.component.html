@@ -1,0 +1,25 @@
+<div class="test-login">
+  <div class="container">
+    <h1>Test Login App</h1>
+    <form [formGroup]="loginFromData">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" formControlName="username">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" formControlName="password">
+      </div>
+
+      <div class="g-recaptcha"
+           data-sitekey="6LcKNEIUAAAAAPGe3VDGzUcqXyi5iyMD-IPhiXej"
+           data-callback="onCaptcha"
+           data-size="visible">
+      </div>
+
+      <button class="btn btn-success" [disabled]="loginFromData.invalid" type="submit" (click)="login()">Login</button>
+
+    </form>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.test-login {
+  text-align: center;
+}
+
+.test-login .container {
+  max-width: 380px;
+  text-align: left;
+}
+
+.test-login form button {
+  margin-top: 15px;
+}
